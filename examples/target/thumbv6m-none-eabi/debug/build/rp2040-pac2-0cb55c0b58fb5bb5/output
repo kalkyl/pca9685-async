@@ -1,3 +1,0 @@
-cargo:rustc-link-search=/Users/henke/Documents/GIT/pwm-pca9685-rs/examples/target/thumbv6m-none-eabi/debug/build/rp2040-pac2-0cb55c0b58fb5bb5/out
-cargo:rerun-if-changed=device.x
-cargo:rerun-if-changed=build.rs

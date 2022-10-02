@@ -1,3 +1,0 @@
-cargo:rustc-link-search=/Users/henke/Documents/GIT/pwm-pca9685-rs/examples/target/thumbv6m-none-eabi/debug/build/embassy-rp-831d61286283f37e/out
-cargo:rerun-if-changed=build.rs
-cargo:rerun-if-changed=link-rp.x.in
