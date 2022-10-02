@@ -1,0 +1,6 @@
+cargo:rustc-link-search=/Users/henke/Documents/GIT/pwm-pca9685-rs/examples/target/thumbv6m-none-eabi/debug/build/embassy-rp-examples-9f584b5c1c6d66d8/out
+cargo:rerun-if-changed=memory.x
+cargo:rustc-link-arg-bins=--nmagic
+cargo:rustc-link-arg-bins=-Tlink.x
+cargo:rustc-link-arg-bins=-Tlink-rp.x
+cargo:rustc-link-arg-bins=-Tdefmt.x

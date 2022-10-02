@@ -1,0 +1,4 @@
+cargo:rustc-link-lib=static=cortex-m
+cargo:rustc-link-search=/Users/henke/Documents/GIT/pwm-pca9685-rs/examples/target/thumbv6m-none-eabi/debug/build/cortex-m-7eb724d8404f5e2c/out
+cargo:rustc-cfg=cortex_m
+cargo:rustc-cfg=armv6m

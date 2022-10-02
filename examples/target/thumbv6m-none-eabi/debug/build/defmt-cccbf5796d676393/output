@@ -1,0 +1,2 @@
+cargo:rustc-link-search=/Users/henke/Documents/GIT/pwm-pca9685-rs/examples/target/thumbv6m-none-eabi/debug/build/defmt-cccbf5796d676393/out
+cargo:rustc-cfg=no_cas
