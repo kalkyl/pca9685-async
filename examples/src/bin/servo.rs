@@ -38,18 +38,23 @@ async fn main(_spawner: Spawner) {
     pwm.enable().await.unwrap();
     info!("Enable");
     
-    
-    loop {
+    // Turn on channel 0 at 0.
+    pwm.set_channel_on(Channel::C0, 0).await.unwrap();    
+    loop { 
+        info!("0 deg");
+        pwm.set_channel_off(Channel::C0, 100).await.unwrap();
+        Timer::after(Duration::from_millis(500)).await;
+
+        info!("90 deg");
+        pwm.set_channel_off(Channel::C0, 385).await.unwrap();
+        Timer::after(Duration::from_millis(500)).await;
+         
+        info!("180 deg");
+        pwm.set_channel_off(Channel::C0, 670).await.unwrap();
+        Timer::after(Duration::from_millis(500)).await;
         
-        // Turn on channel 0 at 0.
-        pwm.set_channel_on(Channel::C0, 0).await.unwrap();
-        Timer::after(Duration::from_millis(250)).await;
-        
-        // Turn off channel 0 at 2047, which is 50% in
-        // the range `[0..4095]`.
-        pwm.set_channel_off(Channel::C0, 2047).await.unwrap();
-        
-        info!("Blink");
-        Timer::after(Duration::from_millis(250)).await;
+        info!("0 deg");
+        pwm.set_channel_off(Channel::C0, 384).await.unwrap();
+        Timer::after(Duration::from_millis(500)).await;
     }
 }
